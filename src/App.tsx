@@ -53,9 +53,8 @@ const App = () => (
             </Button>
           </Link>
           <a href={(import.meta as any).env.VITE_SHOPEASE_URL || 'http://localhost:3000'} target="_blank" rel="noopener noreferrer" className="fixed top-4 right-4 z-50">
-            <Button className="h-12 px-6 shadow-lg shadow-indigo-500/20 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full flex items-center gap-2 border border-indigo-500/50">
-              <ShoppingBag className="w-5 h-5" />
-              <span className="font-semibold">Shop Ease</span>
+            <Button variant="outline" size="icon" className="w-12 h-12 shadow-md bg-background/80 backdrop-blur-md">
+              <ShoppingBag className="w-8 h-8 text-indigo-600" />
             </Button>
           </a>
         </BrowserRouter>
