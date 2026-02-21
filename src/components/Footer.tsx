@@ -25,7 +25,7 @@ export const Footer = () => {
           </div>
 
           <div className="text-sm text-muted-foreground text-center md:text-right">
-            <div>Cardano Hackathon Asia - IBW Edition 2025</div>
+            <div>Cardano Hackathon Asia - IBW Edition 2026</div>
             <div className="text-xs mt-1">Built with privacy, powered by decentralization</div>
           </div>
         </div>

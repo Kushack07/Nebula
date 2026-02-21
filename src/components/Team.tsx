@@ -64,7 +64,7 @@ export const Team = () => {
               </div>
               <div className="p-6 rounded-lg bg-muted/30">
                 <div className="text-3xl font-bold text-secondary mb-2">IBW</div>
-                <div className="text-muted-foreground">Edition 2025</div>
+                <div className="text-muted-foreground">Edition 2026</div>
               </div>
             </div>
           </Card>

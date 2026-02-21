@@ -13,7 +13,11 @@ import Echo from "./pages/Echo";
 import DataDAO from "./pages/DataDAO";
 import Pulse from "./pages/Pulse";
 import NotFound from "./pages/NotFound";
+import WalletPage from "./pages/WalletPage";
 import { Footer } from "./components/Footer";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Wallet } from "lucide-react";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +33,7 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/wallet" element={<WalletPage />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="/journal" element={<Journal />} />
             <Route path="/finance" element={<Finance />} />
@@ -42,6 +47,11 @@ const App = () => (
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
+          <Link to="/wallet" className="fixed top-4 left-4 z-50">
+            <Button variant="outline" size="icon" className="w-12 h-12 shadow-md bg-background/80 backdrop-blur-md">
+              <Wallet className="w-8 h-8 text-primary" />
+            </Button>
+          </Link>
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>

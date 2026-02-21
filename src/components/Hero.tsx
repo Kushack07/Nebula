@@ -23,7 +23,7 @@ export const Hero = () => {
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-6 animate-fade-in">
           <Sparkles className="w-4 h-4 text-primary" />
-          <span className="text-sm text-muted-foreground">Cardano Hackathon Asia - IBW Edition 2025</span>
+          <span className="text-sm text-muted-foreground">Cardano Hackathon Asia - IBW Edition 2026</span>
         </div>
 
         <h1 className="text-6xl md:text-8xl font-bold mb-6 glow-text bg-gradient-primary bg-clip-text text-transparent animate-fade-in" style={{ animationDelay: '0.2s' }}>

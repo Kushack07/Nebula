@@ -8,6 +8,7 @@ import { AgentSummary } from "@/components/AgentSummary";
 import { MidnightHelloWorld } from "@/components/MidnightHelloWorld";
 import { MoodMemeWidget } from "@/components/MoodMemeWidget";
 import { LifeInsights } from "@/components/LifeInsights";
+import { ShopEaseCarousel } from "@/components/ui/ShopEaseCarousel";
 import { Button } from "@/components/ui/button";
 import { RefreshCw, Zap, Activity, Shield, Terminal, Cpu } from "lucide-react";
 import { toast } from "sonner";
@@ -189,6 +190,8 @@ const Dashboard = () => {
                             </div>
                         </div>
                     </div>
+                    {/* Conversational Commerce Integration */}
+                    <ShopEaseCarousel walletAddress="user_wallet_placeholder" />
                 </div>
 
                 {/* Sidebar */}
