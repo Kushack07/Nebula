@@ -14,6 +14,7 @@ import DataDAO from "./pages/DataDAO";
 import Pulse from "./pages/Pulse";
 import NotFound from "./pages/NotFound";
 import WalletPage from "./pages/WalletPage";
+import ShopEasePage from "./pages/ShopEasePage";
 import { Footer } from "./components/Footer";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -43,7 +44,7 @@ const App = () => (
             <Route path="/echo" element={<Echo />} />
             <Route path="/dao" element={<DataDAO />} />
             <Route path="/pulse" element={<Pulse />} />
-            <Route path="/pulse" element={<Pulse />} />
+            <Route path="/shop-ease" element={<ShopEasePage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
@@ -52,15 +53,15 @@ const App = () => (
               <Wallet className="w-8 h-8 text-primary" />
             </Button>
           </Link>
-          <a href={(import.meta as any).env.VITE_SHOPEASE_URL || 'http://localhost:3000'} target="_blank" rel="noopener noreferrer" className="fixed top-4 right-4 z-50">
+          <Link to="/shop-ease" className="fixed top-4 right-4 z-50">
             <Button variant="outline" size="icon" className="w-12 h-12 shadow-md bg-background/80 backdrop-blur-md">
               <ShoppingBag className="w-8 h-8 text-indigo-600" />
             </Button>
-          </a>
+          </Link>
         </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
-  </ErrorBoundary>
+  </ErrorBoundary >
 );
 
 export default App;
